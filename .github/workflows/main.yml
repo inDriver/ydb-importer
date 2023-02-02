@@ -29,7 +29,7 @@ jobs:
         env: 
           actionsvar: ${{ vars.MYVAR }}
           actionspas: ${{ secrets.TOKEN }}
-        run: echo $actionsvar && echo $actionpas && echo $actionpas | wc -c
+        run: echo $actionsvar && echo $actionspas && echo $actionspas | wc -c
       
       - name: check repo var
         run: echo $vars.MYVAR
