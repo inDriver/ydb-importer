@@ -25,6 +25,9 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
       
+      - name: check repo var
+        run: echo $myvar
+      
       - name: checkout Chat repo
         env: 
           TOKEN: ${{ secrets.TOKEN }}
