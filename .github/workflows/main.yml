@@ -27,7 +27,7 @@ jobs:
       
       - name: checkout Chat repo
         env: 
-          TOKEN: ${{ secrets.TOKEN }}}
+          TOKEN: ${{ secrets.TOKEN }}
         run: git clone https://Areso:$TOKEN@github.com/indriver/Chat
 
       # Runs a single command using the runners shell
